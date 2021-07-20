@@ -1,0 +1,27 @@
+6790 git clone git@github.com:trinhgiahuy/data.git
+6792 cd data/
+6794 git-lfs install
+6795 git lfs migrate import --include="*.txt"
+6797 git lfs track "*.txt"
+6798 git lfs tracl "*.bag"
+6799 git add .gitattributes && git commit -m "Add gitattributes"
+
+#It will rewrite all files (modified files)
+#=> Need to add all and commit again
+
+6802  git add 2021-07-16*
+6803  git commit -m "Modified files for LFS"
+6804  git push
+6805  git add 2021-07-17*
+6806  git commit -m "Modified files for LFS"
+6807  git push
+6808  git add 2021-07-18*
+6809  git commit -m "Modified files for LFS"
+6810  git push
+6811  git add 2021-07-19*
+6812  git commit -m "Modified files for LFS"
+6813  git push
+6814  git status
+6815  git add .
+6816  git commit -m "Modified files for LFS"
+6817  git push
